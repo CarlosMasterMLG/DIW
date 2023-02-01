@@ -26,15 +26,26 @@
         height: 50px;
     }
     td{
-        background-color: rgb(140, 0, 255);
+        background-color: rgb(121, 24, 201);
     }
     .null{
         background-color: transparent;
     }
+    :root{
+        --clr: rgb(138, 60, 202);
+    }
+    #btn{
+        font-size: 22px;
+        width: 100px;
+        height: 30px;
+        border-radius: 15px;
+        background-color: var(--clr);
+        border: 2px solid var(--clr);
+    }
 </style>
 <body>
     <table style="width: auto;">
-        <tr> <!--style="background-color: transparent;"-->
+        <tr>
             <td colspan="2"><h2>Personal Identification</h2></td>
             <td colspan="2"><h2>Employee Identification</h2></td>
             <td colspan="2"><h2>Education</h2></td>
@@ -153,7 +164,14 @@
         </tr>
         <tr>
             <td><label for="id_placeOfBirth">Place of birth</label></td>
-            <td><input type="text" id="id_placeOfBirth"></td>
+            <td>
+                <select name="País">
+                    <option value="españa">ESPAÑA</option>
+                    <option value="portugal">Portugal</option>
+                    <option value="francia">Francia</option>
+                    <option value="alemania">Alemania</option>
+                </select>
+            </td>
         </tr>
         <tr>
             <td><label for="id_countryOfBirth">Country of birth</label></td>
@@ -168,7 +186,18 @@
             <td colspan="2"><h2>Other/Comments</h2></td>
             <td colspan="10"><input type="textarea" size="180p"></td>
         </tr>
+        <tr>
+            <td colspan="12">
+                <input type="button" value="Enviar" onclick="mensaje()" id="btn">
+            </td>
+        </tr>
     </table>
+
+    <script>
+        function mensaje(){
+            alert("Has enviado los datos.\nGracias por darnos toda tu información personal.");
+        }
+    </script>
 
 </body>
 </html>
