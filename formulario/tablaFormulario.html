@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<style>
+    body{
+        background-image: url('retro_wave.gif');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+    table, tr, td{
+        border: 2px solid black;
+        border-collapse: collapse;
+    }
+    table{
+        margin: auto;
+        width: 90%;
+        text-align: center;
+    }
+    tr{
+        height: 50px;
+    }
+    td{
+        background-color: rgb(140, 0, 255);
+    }
+    .null{
+        background-color: transparent;
+    }
+</style>
+<body>
+    <table style="width: auto;">
+        <tr> <!--style="background-color: transparent;"-->
+            <td colspan="2"><h2>Personal Identification</h2></td>
+            <td colspan="2"><h2>Employee Identification</h2></td>
+            <td colspan="2"><h2>Education</h2></td>
+            <td colspan="2"><h2>Languages</h2></td>
+            <td colspan="2"><h2>Payment method</h2></td>
+            <td colspan="2"><h2>Individual preferences</h2></td>
+        </tr>
+        <tr>
+            <td><label for="id_name">Name</label></td>
+            <td><input type="text" id="id_name"></td>
+
+            <td><label for="id_company">Company</label></td>
+            <td><input type="text" id="id_company"></td>
+            
+            <td><label for="id_levelEducation">Level of education</label></td>
+            <td><input type="text" id="id_levelEducation"></td>
+
+            <td><label for="id_english">English</label></td>
+            <td><input type="text" id="id_english"></td>
+            
+            <td><label for="id_cardType">Card type</label></td>
+            <td><input type="text" id="id_cardType"></td>
+
+            <td><label for="id_color">Color</label></td>
+            <td><input type="color" id="id_color"></td>
+        </tr>
+
+        <tr>
+            <td><label for="id_surname">Surname</label></td>
+            <td><input type="text" id="id_surname"></td>
+
+            <td><label for="id_employee">Employee number</label></td>
+            <td><input type="text" id="id_employee"></td>
+
+            <td class="null" colspan="2" rowspan="13"></td>
+
+            <td><label for="id_catalan">Català</label></td>
+            <td><input type="text" id="id_catalan"></td>
+
+            <td><label for="id_cardNumber">Card number</label></td>
+            <td><input type="number" id="id_cardNumber"></td>
+
+            <td><label for="id_insta">Instagram</label></td>
+            <td><input type="url" id="id_insta"></td>
+        </tr>
+
+        <tr>
+            <td><label for="id_genero">Man / Woman</label></td>
+            <td><input type="text" id="id_genero"></td>
+
+            <td><label for="id_user">User</label></td>
+            <td><input type="text" id="id_user"></td>
+
+            <td><label for="id_castellano">Castellano</label></td>
+            <td><input type="text" id="id_castellano"></td>
+
+            <td><label for="id_cvv">CVV/CVC</label></td>
+            <td><input type="number" id="id_cvv"></td>
+
+            <td class="null" colspan="2" rowspan="12"></td>
+        </tr>
+
+        <tr>
+            <td><label for="id_postalAddress">Postal Address</label></td>
+            <td><input type="text" id="id_postalAddress"></td>
+
+            <td><label for="id_password">Password</label></td>
+            <td><input type="password" id="id_password"></td>
+            
+            <td><label for="id_others">Others</label></td>
+            <td><input type="text" id="id_others"></td>
+
+            <td><label for="id_expirationDate">Expiration date</label></td>
+            <td><input type="date" id="id_expirationDate"></td>
+        </tr>
+
+        <tr>
+            <td><label for="id_postalCode">Postal Code</label></td>
+            <td><input type="text" id="id_postalCode"></td>
+
+            <td><label for="id_department">Department</label></td>
+            <td><input type="password" id="id_department"></td>
+
+            <td class="null" colspan="4" rowspan="10"></td>
+        </tr>
+        <tr>
+            <td><label for="id_DNI">DNI</label></td>
+            <td><input type="text" id="id_DNI"></td>
+
+            <td><label for="id_startDate">Start date</label></td>
+            <td><input type="date" id="id_startDate"></td>
+        </tr>
+        <tr>
+            <td><label for="id_email">Email</label></td>
+            <td><input type="email" id="id_email"></td>
+
+            <td><label for="id_workHours">Work hours</label></td>
+            <td><input type="number" id="id_workHours"></td>
+        </tr>
+        <tr>
+            <td><label for="id_phone">Phone</label></td>
+            <td><input type="tel" id="id_phone"></td>
+
+            <td><label for="id_CV">C.V.</label></td>
+            <td><input type="file" id="id_CV"></td>
+        </tr>
+        <tr>
+            <td><label for="id_mobile">Mobile</label></td>
+            <td><input type="tel" id="id_mobile"></td>
+
+            <td class="null" colspan="2" rowspan="6"></td>
+        </tr>
+        <tr>
+            <td><label for="id_birthday">Birthday</label></td>
+            <td><input type="date" id="id_birthday"></td>
+        </tr>
+        <tr>
+            <td><label for="id_placeOfBirth">Place of birth</label></td>
+            <td><input type="text" id="id_placeOfBirth"></td>
+        </tr>
+        <tr>
+            <td><label for="id_countryOfBirth">Country of birth</label></td>
+            <td><input type="text" id="id_countryOfBirth"></td>
+        </tr>
+        <tr>
+            <td><label for="id_maritalStatus">Marital status</label></td>
+            <td><input type="text" id="id_maritalStatus"></td>
+        </tr>
+        <tr></tr>
+        <tr>
+            <td colspan="2"><h2>Other/Comments</h2></td>
+            <td colspan="10"><input type="textarea" size="180p"></td>
+        </tr>
+    </table>
+
+</body>
+</html>
