@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo 1</title>
+    <style>
+        body{
+            background-color: grey;
+        }
+        .div1{
+            background-color: black;
+            color: white;
+        }
+        p.left{
+            text-align: left;
+        }
+        p.center{
+            text-align: center;
+        }
+        p.right{
+            text-align: right;
+        }
+        div.justify{
+            border: 1px solid black;
+            padding: 50px;
+            width: 200px;
+            text-align: justify; 
+            color: white;
+        }
+        div.lastCenter{
+            border: 1px solid black;
+            width: 500px;
+            text-align-last: center;
+            color: white;
+        }
+        div.textOverUnderline{
+            color: white;
+            text-decoration: underline overline;
+        }
+        div.textOverUnderlineDouble{
+            color: white;
+            text-decoration: underline overline;
+            text-decoration-style: double;
+            text-decoration-thickness: 3px;
+        }
+        a{
+            text-decoration: none;
+            color: beige;
+        }
+        span.upperCase{
+            text-transform: uppercase;
+            text-decoration: underline;
+        }
+        span.lowerCase{
+            text-transform: lowercase;
+            text-decoration: underline;
+        }
+        span.capitalize{
+            text-transform: capitalize;
+            text-decoration: underline;
+        }
+        p.ident{
+            text-indent: 50px;
+        }
+        p.wordSpacing{
+            word-spacing: 10px;
+        }
+        p.letterSpacing{
+            letter-spacing: 8px;
+            line-height: 1.5;
+        }
+        p.noWrap{
+            white-space: nowrap;
+        }
+        h1.shadow1{
+            text-shadow: 5px 5px rgb(192, 187, 187);
+        }
+        h1.shadow2{
+            text-shadow: 5px 5px 2px rgb(192, 187, 187);
+        }
+        h1.shadow3{
+            color: white;
+            text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="div1">
+        Fondo negro y texto blanco
+    </div>
+    
+    <p class="left">Texto izquierda</p>
+    <p class="center">Texto centrado</p>
+    <p class="right">Texto derecha</p>
+
+    <div class="justify">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde saepe nesciunt obcaecati voluptas in optio, libero atque nemo eaque totam.
+    </div>
+
+    <div class="lastCenter">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde saepe nesciunt obcaecati voluptas in optio, libero atque nemo eaque totam.
+    </div>
+
+    <br>
+
+    <div class="textOverUnderline">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus, officia!
+    </div>
+
+    <br>
+
+    <div class="textOverUnderlineDouble">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus, officia!
+    </div>
+
+    <br>
+
+    <a href="www.holhola.com">www.hola.com</a>
+
+    <br>
+    
+    <div>
+        Lorem <span class="upperCase"> dolor,</span> sit amet <span class="lowerCase"> consectetur</span> adipisicing elit. <span class="capitalize"> Accusamus, officia!</span>
+    </div>
+
+    <br>
+
+    <p class="ident">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda illum fugit deleniti error harum commodi molestiae, impedit vero facere voluptatem!</p>
+
+    <p class="wordSpacing">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda illum fugit deleniti error harum commodi molestiae, impedit vero facere voluptatem!</p>
+
+    <p class="letterSpacing">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda illum fugit deleniti error harum commodi molestiae, impedit vero facere voluptatem!</p>
+
+    <p class="noWrap">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda illum fugit deleniti error harum commodi molestiae, impedit vero facere voluptatem!</p>
+
+    <h1 class="shadow1">Shadow effect</h1>
+    <h1 class="shadow2">Shadow effect</h1>
+    <h1 class="shadow3">Shadow effect</h1>
+
+</body>
+</html>
