@@ -52,15 +52,15 @@
             <td colspan="2"><h2>Individual preferences</h2></td>
         </tr>
         <tr>
-            <td><label for="id_name">Name</label></td>
+            <td><label for="id_name">*Name</label></td>
             <td><input type="text" id="id_name" name="name" minlength="2" maxlength="50" required></td>
 
-            <td><label for="id_company">Company</label></td>
+            <td><label for="id_company">*Company</label></td>
             <td><input type="text" id="id_company" name="company" minlength="3" maxlength="50" required></td>
             
-            <td><label for="level">Level of education</label></td>
+            <td><label for="level">*Level of education</label></td>
             <td>
-                <select name="level" id="id_level">
+                <select name="level" id="id_level" required>
                     <option value="None">None</option>
                     <option value="Primary">Primary</option>
                     <option value="ESO">ESO</option>
@@ -74,7 +74,7 @@
             </td>
 
             <td rowspan="14"></td>
-            <td><label for="id_lenguage_1">English</label></td>
+            <td><label for="id_lenguage_1">*English</label></td>
             <td>
                 <select name="level" id="id_lenguage_1" required>
                     <option value="none">None</option>
@@ -103,10 +103,10 @@
         </tr>
 
         <tr>
-            <td><label for="id_surname">Surname</label></td>
-            <td><input type="text" id="id_surname" name="surname" minlength="4" maxlength="50"></td>
+            <td><label for="id_surname">*Surname</label></td>
+            <td><input type="text" id="id_surname" name="surname" minlength="4" maxlength="50" required></td>
 
-            <td><label for="id_employee">Employee number</label></td>
+            <td><label for="id_employee">*Employee number</label></td>
             <td><input type="text" id="id_employee_number" name="employee_number" maxlength="8" pattern="[0-9]{8}" required></td>
 
             <td class="null" colspan="2" rowspan="13"></td>
@@ -133,16 +133,16 @@
         </tr>
 
         <tr>
-            <td><label for="genero">Gender</label></td>
+            <td><label for="genero">*Gender</label></td>
             <td>
-                <select name="genero" id="id_genero">
+                <select name="genero" id="id_genero" required>
                     <option value="id_male">Male</option>
                     <option value="id_female">Female</option>
                     <option value="id_other">Other</option>
                 </select>
             </td>
 
-            <td><label for="id_user">User</label></td>
+            <td><label for="id_user">*User</label></td>
             <td><input type="text" id="id_user" name="user" pattern="[A-Z]/[0-9]{4}"></td>
 
             <td><label for="id_lenguage_3">Castellano</label></td>
@@ -191,21 +191,21 @@
             <td><label for="id_postalCode">Postal Code</label></td>
             <td><input type="text" id="id_postalCode" name="postal_code"></td>
 
-            <td><label for="id_department">Department</label></td>
+            <td><label for="id_department">*Department</label></td>
             <td><input type="text" id="id_department" name="department"></td>
 
             <td class="null" colspan="4" rowspan="10"></td>
         </tr>
         <tr>
-            <td><label for="id_DNI">DNI</label></td>
-            <td><input type="text" id="id_DNI" name="dni"></td>
+            <td><label for="id_DNI">*DNI</label></td>
+            <td><input type="text" id="id_DNI" name="dni" required></td>
 
-            <td><label for="id_startDate">Start date</label></td>
+            <td><label for="id_startDate">*Start date</label></td>
             <td><input type="date" id="id_startDate" name="start_date"></td>
         </tr>
         <tr>
-            <td><label for="id_email">Email</label></td>
-            <td><input type="email" id="id_email" name="email"></td>
+            <td><label for="id_email">*Email</label></td>
+            <td><input type="email" id="id_email" name="email" required></td>
 
             <td><label for="id_workHours">Work hours</label></td>
             <td><input type="number" id="id_workHours" name="work_hours"></td>
@@ -218,8 +218,8 @@
             <td><input type="file" id="id_CV"></td>
         </tr>
         <tr>
-            <td><label for="id_mobile">Mobile</label></td>
-            <td><input type="tel" id="id_mobile" name="mobile" pattern="[0-9]{9}"></td>
+            <td><label for="id_mobile">*Mobile</label></td>
+            <td><input type="tel" id="id_mobile" name="mobile" pattern="[0-9]{9}" required></td>
 
             <td class="null" colspan="2" rowspan="6"></td>
         </tr>
@@ -243,9 +243,9 @@
             </td>
         </tr>
         <tr>
-            <td><label for="id_marital_status">Marital Status</label></td>
+            <td><label for="id_marital_status">*Marital Status</label></td>
             <td>
-                <select name="maritial_status" id="id_marital_status">
+                <select name="maritial_status" id="id_marital_status" required>
                     <option value="married">Married</option>
                     <option value="single">Single</option>
                 </select>
