@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo clase</title>
+    <style>
+        body{
+            background-color: beige;
+            font-size: large;
+        }
+        a:link{ /*link nuevo*/
+            text-decoration: none;
+        }
+        a:visited{ /*link que ya ha sido usado*/
+            color: red;
+        }
+        a:hover{ /*cuando pones el raton encima*/
+            color: grey;
+            text-decoration: underline;
+        }
+        a:active{/*cuando seleccionas*/
+            color: blueviolet;
+        }
+        div.color:hover{
+            background-color: white;
+        }
+        div.childLine::first-line{
+            color: blue;
+        }
+        h2.childFirst span:first-child{
+            text-transform: uppercase;
+            color: black;
+        }
+        h2.oddEven span:nth-child(odd){
+            text-transform: uppercase;
+            color: black;
+        }
+        h2.oddEven span:nth-child(even){
+            text-transform: uppercase;
+            color:red;
+        }
+    </style>
+</head>
+<body>    
+    <a href="https://github.com/CarlosMasterMLG/DIW">GitHub DIW</a>
+
+    <div class="color">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi, deleniti!</div>
+
+    <br>
+
+    <div class="childLine">Lorem ipsum dolor sit.<br>Lorem ipsum dolor sit amet consectetur.</div>
+    
+    <br>
+    
+    <h2 class="childFirst">Lorem <span>ipsum</span> dolor <span>sit</span>.</h2>
+    
+    <br>
+
+    <h2 class="oddEven">
+        <span>H</span><span>a</span><span>n</span>
+        <span>c</span><span>a</span><span>í</span><span>d</span><span>o</span>
+    </h2>
+</body>
+</html>

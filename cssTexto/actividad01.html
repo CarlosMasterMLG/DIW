@@ -37,9 +37,6 @@
             margin-top: 20px;
             padding: 4px;
         }
-        span.titleWhite{
-            color: white;
-        }
         span.height{
             font-size: 35px;
         }
@@ -55,15 +52,23 @@
             color: white;
             background: rgb(182, 181, 181);
         }
+        h2.oddEven span:nth-child(odd){
+            color: black;
+        }
+        h2.oddEven span:nth-child(even){
+            color:white;
+        }
     </style>
 </head>
 <body>
     <div class="contenedor">
-        <h2>
-            <span class="height">H</span><span class="titleWhite">A</span>N <span class="titleWhite">C</span>A<span class="titleWhite">Í</span>D<span class="titleWhite">O
-            </span> L<span class="titleWhite">O</span>S <span class="titleWhite">D</span>O<span class="titleWhite">S</span> 
-            <span class="height">(R</span><span class="titleWhite">A</span>D<span class="titleWhite">I</span>O <span class="titleWhite height">
-            F</span>U<span class="titleWhite">T</span>U<span class="titleWhite">R</span>A)
+        <h2 class="oddEven">
+            <span class="height">H</span><span>A</span><span>N</span>
+            <span>C</span><span>A</span><span>Í</span><span>D</span><span>O</span>
+            <span>L</span><span>O</span><span>S</span>
+            <span>D</span><span>O</span><span>S</span>
+            <span class="height">(R</span><span>a</span><span>d</span><span>i</span><span>o</span>
+            <span class="height">F</span><span>U</span><span>T</span><span>U</span><span>R</span><span>A)</span>
         </h2>
 
         <p class="linea"></p>
