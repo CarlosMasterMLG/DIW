@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+	<meta charset="utf-8">
+
+	<meta name="author" content="Tomeu Sabater">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- FUll d'estil -->
+	<link rel="stylesheet" href="lib/jquery.mobile-1.4.4.min.css">
+	<!-- jQuery es imprescindible per jQuery Mobile, agafem sa 2.1.1--> 
+	<script src="jquery/jquery-2.1.1.min.js"></script>
+	<!-- Aixo ja es jQuery Mobile, agafem sa 1.4.4-->
+	<script src="lib/jquery.mobile-1.4.4.min.js"></script>
+
+
+	</head>
+	<body>
+
+		<!-- Plana Principal -->
+		<div data-role="page" id="pagemain">
+
+			<!-- Capçalera -->					
+			<div data-role="header" data-position="fixed" style="text-align:center;">             
+			    <p>C.V. Bartolom&eacute; Sabater</p>
+			</div>
+
+			<!-- Main de sa Plana Principal -->
+	  		<div data-role="main" class="ui-content">
+
+	  			<div style="width: 50%; margin: 0 auto;">
+
+					<div>
+						<a href="#pagefoto" class="ui-btn ui-corner-all ui-shadow" data-transition="flip">Foto</a>
+					</div>
+
+			  		<div data-role="controlgroup" data-type="vertical">
+	  					<a href="#pageper" class="ui-btn" data-transition="slide">Personals</a>
+						<a href="#pageexp" class="ui-btn" data-transition="slide">Experiencia</a>
+						<a href="#pageest" class="ui-btn" data-transition="slide">Estudis</a>
+					</div>
+
+					<div>
+						<a href="#pageotros" class="ui-btn ui-corner-all ui-shadow" data-transition="turn">Altres</a>
+					</div>
+
+				</div>
+
+		  	</div>
+
+	  		<!-- Peu de sa Plana principal -->
+			<div data-role="footer" data-position="fixed" style="text-align:center;">
+				<p><small>&copy; Bartolom&eacute; Sabater 2014-2016</small></p>
+			</div>
+
+		</div> <!-- PAGEMAIN -->
+
+
+
+		<!-- FOTO -->
+		<div data-role="page" id="pagefoto" data-dialog="true">
+
+		  <div data-role="header">
+		  	   <p align="center">FOTO</p>
+		  </div>
+
+		  <div data-role="main" class="ui-content">
+		   	<img src="img/face.jpg" alt="Tomeu Sabater" width="100%" height="100%">
+		  </div>
+
+		</div>  <!-- Foto -->
+
+
+		<!-- PERSONALS -->
+		<div data-role="page" id="pageper">
+
+
+		  <div data-role="header" data-position="fixed">
+
+		  	<a href="#" class="ui-btn ui-icon-back ui-corner-all ui-shadow ui-mini ui-btn-icon-notext" data-rel="back">Back</a>
+	  		<h1>PERSONALS</h1>
+	  		<a href="#pagemain" data-transition="flow" class="ui-btn ui-icon-home ui-corner-all ui-shadow ui-mini ui-btn-icon-notext">Home</a>
+
+			<div data-role="navbar">
+		      <ul>
+		        <li><a href="#pageper" class="ui-btn-active ui-state-persist">Personals</a></li>
+		        <li><a href="#pageexp">Experiencia</a></li>
+		        <li><a href="#pageest">Estudis</a></li>
+		      </ul>
+		    </div>
+
+		  </div>
+
+
+		  <div data-role="main" class="ui-content ui-btn-inline">
+				
+
+				<div data-role="collapsibleset">
+					  <div data-role="collapsible">
+					    <h1>Nom i Llinatges</h1>
+					    <p>Bartolom&eacute; Sabater Bosch</p>
+					  </div>
+	  				  <div data-role="collapsible">
+					    <h1>Lloc i Data Naixament</h1>
+					    <p>Ciutat de Palma</p>
+					    <p>18/Març/19xx</p>
+					  </div>
+					  <div data-role="collapsible">
+					    <h1>Adreça</h1>
+					    <p>Padre Ventura, N. 13</p>
+					    <p>07006 - Palma</p>
+					  </div>
+  					  <div data-role="collapsible">
+					    <h1>Contacte</h1>
+					    <p>606975xxx</p>
+					    <p>bmesabater@gmail.com</p>
+					  </div>
+	 			</div>
+
+			</div>
+
+		  	<div data-role="footer" data-position="fixed">
+
+		  	  	<div data-role="controlgroup" data-type="horizontal" style="text-align:center;">
+		  	  		<a href="#" class="ui-btn ui-corner-all ui-icon-arrow-u ui-shadow ui-btn-icon-notext ui-nodisc-icon ui-alt-icon">Up</a>
+    				<a href="https://www.facebook.com/bartolome.sabaterbosch" class="ui-btn">Facebook</a>
+    				<a href="http://es.linkedin.com/in/bartolomesabater/" class="ui-btn">Linked-In</a>
+    				<a href="http://www.infojobs.net/bartolome-sabater-bosch.prf" class="ui-btn">Infojobs</a>
+  				</div>
+	  		</div>
+
+		</div>  <!-- PERSONALS -->
+
+
+
+		<!-- EXPERIENCIA -->
+		<div data-role="page" id="pageexp">
+
+		  <div data-role="header" data-position="fixed">
+			
+			<a href="#" class="ui-btn ui-icon-back ui-corner-all ui-shadow ui-mini ui-btn-icon-notext" data-rel="back">Back</a>
+		    <h1>EXPERIENCIA</h1>
+		    <a href="#pagemain" data-transition="flow" class="ui-btn ui-icon-home ui-corner-all ui-shadow ui-mini ui-btn-icon-notext">Home</a>
+
+			<div data-role="navbar">
+		      <ul>
+		        <li><a href="#pageper">Personals</a></li>
+		        <li><a href="#pageexp" class="ui-btn-active ui-state-persist">Experiencia</a></li>
+		        <li><a href="#pageest">Estudis</a></li>
+		      </ul>
+		    </div>
+
+
+		  </div>
+
+		  <div data-role="main" class="ui-content">
+
+				<table data-role="table" data-mode="columntoggle" class="ui-responsive ui-shadow" id="myTable">
+				  <thead>
+				    <tr>
+				      <th data-priority="1"><small>Data Inici</small></th>
+				      <th data-priority="2"><small>Data Fi</small></th>
+				      <th><small>Empresa</small></th>
+				      <th data-priority="2"><small>Carrec</small></th>
+				      <th data-priority="3"><small>Sou</small></th>
+				    </tr>
+				  </thead>
+				  <tbody>
+				    <tr>
+				      <td><small>Gener 1998</small></td>
+				      <td><small>Febrer 2001</small></td>
+				      <td><small>J.P. Assessors</small></td>
+				      <td><small>Responsable SSII</small></td>
+				      <td><small>15.000€</small></td>
+				    </tr><tr>
+				      <td><small>Abril 2001</small></td>
+				      <td><small>Maig 2008</small></td>
+				      <td><small>Melia Hoteles</small></td>
+				      <td><small>Analista Programador</small></td>
+				      <td><small>20.000€</small></td>
+				    </tr><tr>
+				      <td><small>Febrer 2010</small></td>
+				      <td><small>Juliol 2014</small></td>
+				      <td><small>Grup Iberostar</small></td>
+				      <td><small>Cap de Projecte</small></td>
+				      <td><small>25.000€</small></td>
+				    </tr><tr>
+				      <td><small>Octubre 2014</small></td>
+				      <td><small>Actualment</small></td>
+				      <td><small>Edib</small></td>
+				      <td><small>Professor</small></td>
+				      <td><small>30.000€</small></td>
+			      	</tr>
+				  </tbody>
+				</table>
+
+		  </div>
+
+
+		  <div data-role="footer" data-position="fixed">
+
+		  	  	<div data-role="controlgroup" data-type="horizontal" style="text-align:center;">
+		  	  		<a href="#" class="ui-btn ui-corner-all ui-icon-arrow-u ui-shadow ui-btn-icon-notext ui-nodisc-icon ui-alt-icon">Up</a>
+
+    				<a href="https://www.facebook.com/bartolome.sabaterbosch" class="ui-btn">Facebook</a>
+    				<a href="http://es.linkedin.com/in/bartolomesabater/" class="ui-btn">Linked-In</a>
+    				<a href="http://www.infojobs.net/bartolome-sabater-bosch.prf" class="ui-btn">Infojobs</a>
+  				</div>
+	  		</div>
+
+		</div>  <!-- EXPERIENCIA -->
+
+
+		<!-- ESTUDI -->
+		<div data-role="page" id="pageest">
+
+			  <div data-role="panel" id="panelR"> 
+			    <h2>Estudis Reglats</h2>
+			    <hr>
+			    <ul>
+			    	<li>F.P. 2 Grau Inform&agrave;tica San Josep Obrer</li>
+			    	<li>Dipliomatura Inform&agrave;tica U.I.B</li>
+			    	<li>Ingenieria Inform&agrave;tica U.I.B.</li>
+		    	</ul>
+			  </div> 
+
+  			  <div data-role="panel" id="panelNR"> 
+			    <h2>Estudis No Reglats</h2>
+			    <hr>
+			    <ul>
+			    	<li>Oracle Designer Developer 2000</li>
+			    	<li>PHP</li>
+			    	<li>Phonegap</li>
+			    	<li>Cool:Biz,Spex,Gen</li>
+			    	<li>Java B&agrave;sico</li>
+			    	<li>HTML5 + CSS + JavaScript</li>
+			    </ul>	
+			  </div> 
+
+		  <div data-role="header" data-position="fixed">
+
+			  <a href="#" class="ui-btn ui-icon-back ui-corner-all ui-shadow ui-mini ui-btn-icon-notext" data-rel="back">Back</a>
+			  <h1>ESTUDIS</h1>
+			  <a href="#pagemain" data-transition="flow" class="ui-btn ui-icon-home ui-corner-all ui-shadow ui-mini ui-btn-icon-notext">Home</a>
+
+			<div data-role="navbar">
+		      <ul>
+		        <li><a href="#pageper">Personals</a></li>
+		        <li><a href="#pageexp">Experiencia</a></li>
+		        <li><a href="#pageest" class="ui-btn-active ui-state-persist">Estudis</a></li>
+		      </ul>
+		    </div>
+
+		  </div>
+
+
+		  <div data-role="main" class="ui-content">
+
+    		<a href="#panelR" class="ui-btn ui-btn-inline ui-corner-all ui-shadow">Reglats</a>
+    		<a href="#panelNR" class="ui-btn ui-btn-inline ui-corner-all ui-shadow">No Reglats</a>
+
+			<!-- <p class="ui-corner-all" style="background-color:#FFF;">Hola que tal como te va, esto es texto que lo quiero redondeadito</p> -->
+
+		  </div>
+
+
+		<div data-role="footer" data-position="fixed">
+
+	  	  	<div data-role="controlgroup" data-type="horizontal" style="text-align:center;">
+	  	  		<a href="#" class="ui-btn ui-corner-all ui-icon-arrow-u ui-shadow ui-btn-icon-notext ui-nodisc-icon ui-alt-icon">Up</a>
+
+				<a href="https://www.facebook.com/bartolome.sabaterbosch" class="ui-btn">Facebook</a>
+				<a href="http://es.linkedin.com/in/bartolomesabater/" class="ui-btn">Linked-In</a>
+				<a href="http://www.infojobs.net/bartolome-sabater-bosch.prf" class="ui-btn">Infojobs</a>
+			</div>
+  		</div>
+
+
+		</div> <!-- ESTUDIOS -->
+
+
+
+		<!-- OTROS -->
+		<div data-role="page" id="pageotros">
+
+			<div data-role="header" data-position="fixed">
+				<a href="#" class="ui-btn ui-icon-back ui-corner-all ui-shadow ui-mini ui-btn-icon-notext" data-rel="back">Back</a>
+		    	<h1>ALTRES</h1>
+		    	<a href="#pagemain" data-transition="flow" class="ui-btn ui-icon-home ui-corner-all ui-shadow ui-mini ui-btn-icon-notext">Home</a>
+			</div>
+
+			<div data-role="main" class="ui-content">
+
+	  			<div style="width: 50%; margin: 0 auto;">
+
+			  		<div data-role="controlgroup" data-type="vertical">
+	  					<a href="#myPopup1" data-rel="popup" class="ui-btn" data-transition="flow" data-position-to="window">Caracter</a>
+	  					<a href="#myPopup2" data-rel="popup" class="ui-btn" data-transition="turn" data-position-to="window">Aficions</a>
+						<a href="#myPopup3" data-rel="popup" class="ui-btn" data-transition="slideup" data-position-to="window">Interesos</a>			
+					</div>
+
+				</div>
+
+
+				<div data-role="popup" id="myPopup1" class="ui-content">
+					 <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+					 <h3 align="center">Caracter</h3>
+					 <hr>
+      				    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc id rutrum libero. 
+                           Cras posuere elementum orci. Donec venenatis enim ut ornare lobortis. 
+                           Cras a ex non nibh ultrices suscipit. Ut varius metus ut urna euismod, sed dignissim orci sodales.
+                        <p>
+    			</div>
+				<div data-role="popup" id="myPopup2" class="ui-content">
+					 <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+ 					 <h3 align="center">Aficions</h3>
+					 <hr>
+      				    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc id rutrum libero. 
+                           Cras posuere elementum orci. Donec venenatis enim ut ornare lobortis. 
+                           Cras a ex non nibh ultrices suscipit. Ut varius metus ut urna euismod, sed dignissim orci sodales.
+                        <p>
+    			</div>
+				<div data-role="popup" id="myPopup3" class="ui-content">
+					 <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+					 <h3 align="center">Interesos</h3>
+					 <hr>
+      				    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc id rutrum libero. 
+                           Cras posuere elementum orci. Donec venenatis enim ut ornare lobortis. 
+                           Cras a ex non nibh ultrices suscipit. Ut varius metus ut urna euismod, sed dignissim orci sodales.
+                        <p>
+    			</div>
+
+
+		  	</div>
+					
+			<div data-role="footer" data-position="fixed">
+
+				<div data-role="controlgroup" data-type="horizontal" style="text-align:center;">
+		  	  		<a href="#" class="ui-btn ui-corner-all ui-icon-arrow-u ui-shadow ui-btn-icon-notext ui-nodisc-icon ui-alt-icon">Up</a>
+
+    				<a href="https://www.facebook.com/bartolome.sabaterbosch" class="ui-btn">Facebook</a>
+    				<a href="http://es.linkedin.com/in/bartolomesabater/" class="ui-btn">Linked-In</a>
+    				<a href="http://www.infojobs.net/bartolome-sabater-bosch.prf" class="ui-btn">Infojobs</a>
+				</div>
+
+			</div>
+
+		</div>  <!-- OTROS -->
+
+
+	</body>
+</html>
